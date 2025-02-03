@@ -1,1 +1,62 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+    margin: 0 auto;
+    font-family: $secondary-font
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-family: $primary-font;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    text-transform: uppercase;
+    background-color: $background-color;
+    color: $white;
+    border: none;
+    font-family: $secondary-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+
+}
