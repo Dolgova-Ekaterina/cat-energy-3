@@ -2,12 +2,27 @@
     padding: 25px 20px 0;
 }
 
+.additional-product__list {
+    margin: 0;
+}
+
+.additional-product__item {
+    border-bottom: 1px solid #CDCDCD;
+    padding: 13px 0 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
 .additional-product__title {
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
     text-align: center;
     color: $black;
+    border-bottom: 1px solid #CDCDCD;
+    padding-bottom: 36px;
+    text-align: left;
 }
 
 .additional-product__name {
@@ -43,4 +58,43 @@
     line-height: 20px;
     text-align: center;
     color: $white;
+    padding: 186px 0px 43px;
+    margin-left: 58px;
+    width: 161px;
+}
+
+.additional-product__button {
+    margin-top: 2px;
+}
+
+.additional-product__button:hover {
+    background: #5EAA2F;
+}
+
+.additional-product__button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: #5EAA2F;
+}
+
+.additional-product__container {
+    margin-top: 35px;
+    background-image: url(../../images/cat-space-mobile@1x.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
+    height: 290px;
+    background-position: center;
+    background-color: rgba(104, 183, 56, 0.85);
+    position: relative;
+}
+
+.additional-product__container::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../icons/stack.svg#icon-gift);
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 80px;
+    top: 60px;
+    left: 100px;
 }

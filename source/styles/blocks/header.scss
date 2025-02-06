@@ -1,5 +1,31 @@
 .header {
   background-color: $white;
   color: #ffffff;
-  padding: 10px 15px;
+}
+
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 20px 15px;
+  border-bottom: 1px solid #E6E6E6;
+  height: 65px;
+}
+
+.header__button {
+  background-image: url(../../icons/stack.svg#burger-icon);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.header__button--clouse {
+  background-image: url(../../icons/stack.svg#clouse-icon);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
 }

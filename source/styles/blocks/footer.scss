@@ -1,3 +1,121 @@
 .footer {
     background-color: $background-color-light;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+}
+
+.footer__link-logo-text {
+    background-color: #111111;
+    display: block;
+    mask-image: url(../../images/cat-logo-text.svg);
+    mask-repeat: no-repeat;
+    width: 128px;
+    height: 24px;
+
+}
+
+.footer__link-logo-text:hover {
+    background-color: #3E3E3E;
+}
+
+.footer__link-logo-text:active {
+    background-color: #6B6B6B;
+}
+
+.footer__social-link--vk {
+    background-color: #666666;
+    display: block;
+    mask-image: url(../../icons/stack.svg#vk-icon);
+    mask-repeat: no-repeat;
+    width: 28px;
+    height: 22px;
+}
+
+.footer__social-link--youtube {
+    background-color: #666666;
+    display: block;
+    mask-image: url(../../icons/stack.svg#youtube-icon);
+    mask-repeat: no-repeat;
+    width: 28px;
+    height: 22px;
+}
+
+.footer__social-link--telegram {
+    background-color: #666666;
+    display: block;
+    mask-image: url(../../icons/stack.svg#telegram-icon);
+    mask-repeat: no-repeat;
+    width: 28px;
+    height: 22px;
+}
+
+.footer__social-link--vk:hover {
+    background-color: $background-color;
+}
+
+.footer__social-link--youtube:hover {
+    background-color: $background-color;
+}
+
+.footer__social-link--telegram:hover {
+    background-color: $background-color;
+}
+
+.footer__social-link--vk:active {
+    background-color: $background-color;
+    opacity: 30%;
+}
+
+.footer__social-link--youtube:active {
+    background-color: $background-color;
+    opacity: 30%;
+}
+
+.footer__social-link--telegram:active {
+    background-color: $background-color;
+    opacity: 30%;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+}
+
+.footer__copyright-logo-text {
+    font-family: $primary-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: $light-gray;
+}
+
+.footer__copyright-logo {
+    mask-image: url(../../icons/stack.svg#html-academy-logo);
+    display: block;
+    mask-repeat: no-repeat;
+    background-color: #666666;
+    width: 27px;
+    height: 34px;
+}
+
+.footer__copyright-logo:hover {
+    background-color: $background-color;
+}
+
+.footer__wrapper:active {
+    opacity: 30%;
 }
