@@ -23,3 +23,12 @@
     font-size: 14px;
     line-height: 14px;
   }
+
+  .functional__button:hover {
+    background: #5EAA2F;
+}
+
+.functional__button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: #5EAA2F;
+}

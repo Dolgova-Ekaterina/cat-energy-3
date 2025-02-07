@@ -2,6 +2,79 @@
     padding: 0 20px 49px;
 }
 
+.process__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.process__item {
+    position: relative;
+    min-height: 60px;
+}
+
+
+.process__item::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: $background-color;
+    top: 0;
+    left: 0;
+}
+
+
+.process__item--healthy::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../icons/stack.svg#icon-leaf);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 32px;
+    z-index: 1;
+    top: 15px;
+    left: 15px;
+}
+
+.process__item--powder::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../icons/stack.svg#icon-water);
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 26px;
+    height: 29px;
+    top: 16px;
+    left: 16px;
+}
+
+.process__item--comfortable::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../icons/stack.svg#icon-eat);
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 25px ;
+    height:30px ;
+    top: 16px;
+    left: 16px;    
+}
+
+.process__item--time::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../icons/stack.svg#clock-icon);
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 26px;
+    height:31px ;
+    top: 15px;
+    left: 16px;
+}
+
+
 .process__title {
     font-size: 36px;
     font-weight: 400;
@@ -16,4 +89,6 @@
     line-height: 18px;
     text-align: left;
     color: $light-gray;
+    margin-left: 80px;
+    position: relative;
 }

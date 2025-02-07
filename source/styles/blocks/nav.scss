@@ -1,0 +1,19 @@
+.nav__list {
+    font-family: $secondary-font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: $black;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.nav__item {
+    padding: 22px 0 24px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.nav--cloused {
+    display: none;
+}

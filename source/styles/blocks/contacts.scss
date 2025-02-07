@@ -1,5 +1,6 @@
 .contacts {
     padding: 26px 20px;
+    background-color: $background-color-light;
 }
 
 .contacts__cooperation {
@@ -18,4 +19,10 @@
     line-height: 20px;
     text-align: left;
     color: $light-gray;
+}
+
+.contacts__wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
 }
