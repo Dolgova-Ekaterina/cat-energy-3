@@ -1,3 +1,18 @@
+.statistics {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+
+}
+
+.statistics__wrapper {
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    padding: 14px 0 17px;
+    position: relative;
+}
+
 .statistics__result {
     font-family: $secondary-font;
     font-size: 24px;
@@ -12,5 +27,11 @@
     font-weight: 400;
     line-height: 12px;
     text-align: center;
-    color: $light-gray;    
+    color: $light-gray;
+    position: absolute;
+    max-width: 86px;
+    padding: 0 11px;
+    background-color: #eaeaea;
+    left: 17px;
+    top: 48px;
 }

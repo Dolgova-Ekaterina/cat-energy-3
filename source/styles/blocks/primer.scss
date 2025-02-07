@@ -1,6 +1,6 @@
 .primer {
     padding: 25px 20px 40px;
-    background-color: #E2E2E2;
+    background-color: #eaeaea;
 }
 
 .primer__title {
@@ -17,6 +17,7 @@
     line-height: 18px;
     text-align: left;
     color: $light-gray;
+    margin-top: 40px;
 }
 
 .primer__text {
@@ -27,4 +28,5 @@
     text-align: center;
     text-transform: uppercase;
     color: $black;
+    margin-top: 30px;
 }
