@@ -1,3 +1,21 @@
+.nav {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+
+    @media (min-width:$tablet) {
+        width: 436px;
+        position: relative;
+    }
+
+
+    @media (min-width: $desktop){
+        min-width: 476px;
+        z-index: 1;
+        background: transparent;
+    }
+}
+
 .nav__list {
     font-family: $secondary-font;
     font-size: 20px;
@@ -7,13 +25,65 @@
     color: $black;
     text-transform: uppercase;
     margin: 0;
+
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+        line-height: 24px;
+        justify-content: space-between;
+        gap: 33px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .nav__item {
     padding: 22px 0 24px;
     border-bottom: 1px solid #E6E6E6;
+
+    @media (min-width: $tablet) {
+        padding: 0;
+        border: none;
+    }
 }
 
 .nav--cloused {
-    display: none;
+    // display: none;
+}
+
+.nav__link {
+    @media (min-width: $tablet) {
+        padding-bottom: 12px;
+    }
+
+    @media (min-width:$desktop) {
+        color: $white;
+    }
+}
+
+.nav__link--catalog {
+
+    @media (min-width:$desktop) {
+        color: #111;
+    }
+}
+
+.nav__link--current {
+    @media (min-width: $tablet) {
+        border-bottom: 2px solid #68B738;
+    }
+
+    @media (min-width: $desktop) {
+        border-bottom: 2px solid #ffffff;
+    }
+}
+
+.nav__link--active {
+    @media (min-width: $desktop) {
+        border-bottom: 2px solid #68B738;
+    }
 }

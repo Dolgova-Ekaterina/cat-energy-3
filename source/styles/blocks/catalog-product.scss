@@ -1,3 +1,9 @@
+.catalog-product {
+    @media (min-width: $desktop) {
+        padding: 74px 110px 71px;
+    }
+}
+
 .catalog-product__title {
     font-size: 36px;
     font-weight: 400;
@@ -5,4 +11,15 @@
     text-align: left;
     color: $black;
     padding: 27px 20px 41px;
+
+    @media (min-width:$tablet) {
+        font-size: 60px;
+        line-height: 60px;
+        padding: 65px 30px 84px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 0;
+    }
+
 }

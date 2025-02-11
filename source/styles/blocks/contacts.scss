@@ -1,6 +1,10 @@
 .contacts {
     padding: 26px 20px;
-    background-color: $white
+    background-color: $white;
+
+    @media (min-width:$tablet) {
+        padding: 60px 70px;
+    }
 }
 
 .contacts--catalog {
@@ -14,6 +18,12 @@
     text-align: left;
     color: #111111;
     text-transform: uppercase;
+
+    @media (min-width:$tablet) {
+        font-size: 20px;
+        line-height: 26px;
+        width: 163px;
+    }
 }
 
 .contacts__address {
@@ -23,10 +33,23 @@
     line-height: 20px;
     text-align: left;
     color: $light-gray;
+
+
+    @media (min-width:$tablet) {
+        font-size: 16px;
+        line-height: 20px;
+        width: 157px;
+        text-align: end;
+    }
 }
 
 .contacts__wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
+
+    @media (min-width:$tablet) {
+        display: flex;
+        justify-content: space-between;
+    }
 
 }
