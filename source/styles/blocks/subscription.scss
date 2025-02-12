@@ -4,6 +4,10 @@
     @media (min-width:$tablet) {
         padding: 80px 68px;
     }
+
+    @media (min-width:$desktop) {
+        padding: 96px 110px 104px;
+    }
 }
 
 .subscription__title {
@@ -12,13 +16,55 @@
     line-height: 24px;
     text-align: left;
     color: $black;
+    position: relative;
 
     @media (min-width:$tablet) {
         font-size: 32px;
         line-height: 32px;
     }
 
+    @media (min-width:$desktop) {
+        font-size: 40px;
+        line-height: 40px;
+    }
 }
+
+
+.subscription__title::before {
+    @media (min-width:$tablet) {
+        content: "";
+        position: absolute;
+        border: 2px solid #68B738;
+        width: 30px;
+        top: 10px;
+        left: -70px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 70px;
+        left: -110px;
+    }
+}
+
+
+.subscription__title::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #68B738;
+    width: 100%;
+    top: 10px;
+    left: 186px;
+
+
+    @media (min-width:$tablet) {
+        left: 240px;
+    }
+
+    @media (min-width: $desktop) {
+        left: 300px;
+    }
+}
+
 
 .subscription__text {
     font-family: $secondary-font;
@@ -38,9 +84,9 @@
 
 .subscription__wrapper {
     @media (min-width:$tablet) {
-        display: grid;
+        display: flex;
         margin-top: 6px;
-        grid-template-columns: 1fr 256px;
+        justify-content: center;
     }
 }
 
@@ -52,6 +98,11 @@
 
     @media (min-width:$tablet) {
         margin-top: 16px;
+        max-width: 376px;
+    }
+
+    @media (min-width:$desktop) {
+        max-width: 496px;
     }
 }
 
