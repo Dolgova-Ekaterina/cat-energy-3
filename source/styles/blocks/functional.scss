@@ -1,5 +1,12 @@
 .functional {
-    background-image: url("../../images/cat-mobile@1x.png");
+    background-image: 
+    image-set(
+      url("../../images/cat-mobile@1x.png"),
+      url("../../images/cat-mobile@1x.webp"),
+      url("../../images/cat-mobile@2x.png"),
+      url("../../images/cat-mobile@2x.webp"),
+    );
+    
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -23,7 +30,13 @@
     @media (min-width:$desktop) {
       content: "";
       position: absolute;
-      background-image: url("../../images/cat-desktop@1x.png");
+      background-image:
+      image-set(
+         url("../../images/cat-desktop@1x.png"),
+         url("../../images/cat-desktop@1x.webp"),
+         url("../../images/cat-desktop@2x.png"),
+         url("../../images/cat-desktop@2x.webp"),         
+      );
       background-repeat: no-repeat;
       width: 720px;
       height: 694px;
