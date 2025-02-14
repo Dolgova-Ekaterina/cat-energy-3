@@ -2,6 +2,7 @@
     position: absolute;
     width: 100%;
     background-color: #fff;
+    z-index: 1;
 
     @media (min-width:$tablet) {
         width: 436px;
@@ -52,7 +53,12 @@
 }
 
 .nav--cloused {
-    // display: none;
+    display: none;
+
+    @media (min-width:$tablet) {
+        display: block;
+
+    }
 }
 
 .nav__link {

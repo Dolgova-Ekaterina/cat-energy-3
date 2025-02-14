@@ -5,10 +5,22 @@
     @media (min-width:$tablet) {
         padding: 60px 70px;
     }
+
+    @media (min-width:$desktop) {
+        position: absolute;
+        width: 565px;
+        height: 199px;
+        left: 110px;
+        bottom: 106px;
+    }
 }
 
 .contacts--catalog {
     background-color: $background-color-light;
+
+    @media (min-width:$desktop) {
+        background-color: $white;
+    }
 }
 
 .contacts__cooperation {
@@ -18,6 +30,7 @@
     text-align: left;
     color: #111111;
     text-transform: uppercase;
+    width: 140px;
 
     @media (min-width:$tablet) {
         font-size: 20px;
@@ -33,6 +46,7 @@
     line-height: 20px;
     text-align: left;
     color: $light-gray;
+    width: 140px;
 
 
     @media (min-width:$tablet) {
@@ -44,8 +58,9 @@
 }
 
 .contacts__wrapper {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 
     @media (min-width:$tablet) {
         display: flex;

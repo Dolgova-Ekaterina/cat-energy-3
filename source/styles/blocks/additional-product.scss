@@ -118,6 +118,7 @@
 
     @media (min-width:$tablet) {
         left: 376px;
+        width: calc(100% - 357px);
     }
 
     @media (min-width: $desktop) {
