@@ -60,11 +60,12 @@
 .contacts__wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    height: 60px;
 
     @media (min-width:$tablet) {
         display: flex;
         justify-content: space-between;
+        height: 80px;
     }
 
 }

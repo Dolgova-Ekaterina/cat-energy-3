@@ -1,101 +1,99 @@
 .functional {
-    background-image: 
-    image-set(
-      url("../../images/cat-mobile@1x.png"),
+  background-image:
+    image-set(url("../../images/cat-mobile@1x.png"),
       url("../../images/cat-mobile@1x.webp"),
       url("../../images/cat-mobile@2x.png"),
       url("../../images/cat-mobile@2x.webp"),
     );
-    
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 480px;
-    padding: 27px 20px 0;
 
-    @media (min-width:$tablet) {
-      background-image: none;
-      padding: 65px 30px 0;
-      height: 875px;
-      position: relative;
-    }
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 480px;
+  padding: 27px 20px 0;
 
-    @media (min-width:$desktop) {
-      padding: 110px 190px 0;
-      height: 580px;
-    }
+  @media (min-width:$tablet) {
+    background-image: none;
+    padding: 65px 30px 0;
+    height: 875px;
+    position: relative;
   }
 
-  .functional::after {
-    @media (min-width:$desktop) {
-      content: "";
-      position: absolute;
-      background-image:
-      image-set(
-         url("../../images/cat-desktop@1x.png"),
-         url("../../images/cat-desktop@1x.webp"),
-         url("../../images/cat-desktop@2x.png"),
-         url("../../images/cat-desktop@2x.webp"),         
+  @media (min-width:$desktop) {
+    padding: 110px 190px 0;
+    height: 580px;
+  }
+}
+
+.functional::after {
+  @media (min-width:$desktop) {
+    content: "";
+    position: absolute;
+    background-image:
+      image-set(url("../../images/cat-desktop@1x.png"),
+        url("../../images/cat-desktop@1x.webp"),
+        url("../../images/cat-desktop@2x.png"),
+        url("../../images/cat-desktop@2x.webp"),
       );
-      background-repeat: no-repeat;
-      width: 720px;
-      height: 694px;
-      background-size: 100%;
-      top: -105px;
-      right: 0px;
-    }
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 694px;
+    background-size: 100%;
+    top: -105px;
+    right: 0px;
   }
-  
-  .functional__title {
-    text-align: center;
-    color: #fff;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
+}
 
-    @media (min-width:$tablet) {
-      font-size: 60px;
-      line-height: 60px;
-      color: $black;
-      margin-left: 90px;
-      text-align: left;
-      width: 414px;
-    }
-     
-    @media (min-width:$desktop) {
-      margin: 0;
-    }
-  }
-  
-  .functional__text {
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: $secondary-font;
-    font-size: 14px;
-    line-height: 14px;
-    margin-top: 25px;
+.functional__title {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
 
-    @media (min-width:$tablet) {
-      font-size: 20px;
-      line-height: 20px;
-      color: $black;
-      margin: 40px 0 0 90px ;
-      text-align: left;
-    }
-
-    @media (min-width:$desktop) {
-      margin: 40px 0 0;
-    }
+  @media (min-width:$tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    margin-left: 90px;
+    text-align: left;
+    width: 414px;
   }
 
-  .functional__button:hover {
-    background: #5EAA2F;
+  @media (min-width:$desktop) {
+    margin: 0;
+  }
+}
+
+.functional__text {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 25px;
+
+  @media (min-width:$tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    margin: 40px 0 0 90px;
+    text-align: left;
+  }
+
+  @media (min-width:$desktop) {
+    margin: 40px 0 0;
+  }
+}
+
+.functional__button:hover {
+  background: #5EAA2F;
 }
 
 .functional__button:active {
-    color: rgba(255, 255, 255, 0.3);
-    background: #5EAA2F;
+  color: rgba(255, 255, 255, 0.3);
+  background: #5EAA2F;
 }
 
 .functional__img {
@@ -114,12 +112,13 @@
 }
 
 .functional__button {
-  
+  margin-top: -2px;
+
   @media (min-width:$tablet) {
-    width: 242px;
+    width: 244px;
     height: 54px;
     position: absolute;
-    top: 295px;
+    top: 297px;
     left: 120px;
     font-size: 20px;
     line-height: 26px;

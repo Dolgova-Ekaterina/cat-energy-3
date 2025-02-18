@@ -6,7 +6,9 @@
     max-width: 280px;
 
     @media (min-width: $tablet) {
-        max-width: 367px;
+        max-width: 368px;
+        gap: 40px;
+        margin-top: 54px;
     }
 
     @media (min-width: $desktop) {
@@ -50,7 +52,7 @@
     padding: 0 11px;
     background-color: #eaeaea;
     left: 17px;
-    top: 48px;   
+    top: 46px;   
     
     @media (min-width: $tablet) {
         background-color: $white;

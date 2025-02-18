@@ -7,7 +7,6 @@
     display: flex;
     padding: 25px 34px 0 30px;
     align-items: center;
-    gap: 93px;
     justify-content: space-between;
   }
 
@@ -56,4 +55,13 @@
   height: 24px;
   border: none;
   background-color: transparent;
+}
+
+.header__link-logo-text {
+  margin-top: 5px;
+  margin-right: 11px;
+}
+
+.header__link-logo-img {
+  margin-top: 6px;
 }
