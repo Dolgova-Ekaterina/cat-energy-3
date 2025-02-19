@@ -62,4 +62,9 @@
         top: 66px;
         left: 11px;
     } 
+
+    @media (min-width:$desktop) {
+        top: 63px;
+        background-color: #f2f2f2;
+    }
 }

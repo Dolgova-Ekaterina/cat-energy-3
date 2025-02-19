@@ -12,6 +12,7 @@
         height: 199px;
         left: 110px;
         bottom: 106px;
+        padding: 60px 79px;
     }
 }
 
@@ -54,6 +55,10 @@
         line-height: 20px;
         width: 157px;
         text-align: end;
+    }
+
+    @media (min-width:$desktop) {
+        text-align: left;
     }
 }
 

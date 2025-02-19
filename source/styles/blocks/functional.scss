@@ -39,7 +39,7 @@
     width: 720px;
     height: 694px;
     background-size: 100%;
-    top: -105px;
+    top: -112px;
     right: 0px;
   }
 }
@@ -62,6 +62,7 @@
 
   @media (min-width:$desktop) {
     margin: 0;
+    margin-top: 3px;
   }
 }
 
@@ -105,9 +106,9 @@
 
   @media (min-width:$desktop) {
     position: absolute;
-    left: 39%;
+    left: 38.7%;
     z-index: 1;
-    top: 4px;
+    top: 12px;
   }
 }
 

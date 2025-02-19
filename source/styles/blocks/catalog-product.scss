@@ -1,6 +1,6 @@
 .catalog-product {
     @media (min-width: $desktop) {
-        padding: 74px 110px 71px;
+        padding: 77px 110px 71px;
     }
 }
 
@@ -22,4 +22,8 @@
         padding: 0;
     }
 
+}
+
+.catalog-product__list {
+    margin: 0;
 }
