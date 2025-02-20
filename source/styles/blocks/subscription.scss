@@ -34,15 +34,16 @@
     @media (min-width:$tablet) {
         content: "";
         position: absolute;
-        border: 2px solid #68B738;
+        border: 1px solid #68B738;
         width: 30px;
-        top: 10px;
-        left: -70px;
+        top: 14px;
+        left: -68px;
     }
 
     @media (min-width: $desktop) {
         width: 70px;
         left: -110px;
+        top: 18px;
     }
 }
 
@@ -50,18 +51,21 @@
 .subscription__title::after {
     content: "";
     position: absolute;
-    border: 2px solid #68B738;
-    width: 100%;
-    top: 10px;
-    left: 186px;
+    border: 1px solid #68B738;
+    width: calc(100% - 172px);
+    top: 11px;
+    left: 192px;
 
 
     @media (min-width:$tablet) {
-        left: 240px;
+        left: 244px;
+        top: 14px;
     }
 
     @media (min-width: $desktop) {
-        left: 300px;
+        left: 293px;
+        top: 18px;
+        width: calc(100% - 183px);
     }
 }
 
@@ -80,6 +84,10 @@
         line-height: 32px;
         margin-top: 66px;
     }
+
+    @media (min-width:$desktop) {
+        margin-top: 73px;
+    }
 }
 
 .subscription__wrapper {
@@ -91,10 +99,11 @@
 }
 
 .subscription__form {
-    padding: 13px;
+    padding: 11px 11px 0px 11px;
     width: 100%;
     height: 56px;
     margin-top: 24px;
+    border: 1px solid #e7e7e7;
 
     @media (min-width:$tablet) {
         margin-top: 16px;
@@ -104,6 +113,18 @@
     @media (min-width:$desktop) {
         max-width: 496px;
     }
+}
+
+.subscription__form:hover {
+    border-color: #cdcdcd;
+}
+
+.subscription__form:focus {
+    border-color: #444444;
+}
+
+.subscription__form:invalid {
+    border-color: #FF8282;
 }
 
 .subscription__form::placeholder {

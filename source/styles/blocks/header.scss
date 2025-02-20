@@ -2,17 +2,16 @@
   background-color: $white;
   color: #ffffff;
   position: relative;
-  
+
   @media (min-width: $tablet) {
     display: flex;
     padding: 25px 34px 0 30px;
     align-items: center;
-    gap: 93px;
     justify-content: space-between;
   }
 
   @media (min-width:$desktop) {
-    padding: 55px 110px 0;
+    padding: 61px 110px 0;
   }
 }
 
@@ -36,6 +35,18 @@
   }
 }
 
+.header__items:hover {
+  @media (min-width:$desktop) {
+    opacity: 80%;
+  }
+}
+
+.header__items:active {
+  @media (min-width:$desktop) {
+    opacity: 60%;
+  }
+}
+
 .header__button {
   background-image: url(../../icons/stack.svg#burger-icon);
   background-repeat: no-repeat;
@@ -56,4 +67,13 @@
   height: 24px;
   border: none;
   background-color: transparent;
+}
+
+.header__link-logo-text {
+  margin-top: 5px;
+  margin-right: 11px;
+}
+
+.header__link-logo-img {
+  margin-top: 6px;
 }

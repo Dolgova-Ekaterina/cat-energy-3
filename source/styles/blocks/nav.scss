@@ -2,6 +2,7 @@
     position: absolute;
     width: 100%;
     background-color: #fff;
+    z-index: 1;
 
     @media (min-width:$tablet) {
         width: 436px;
@@ -28,6 +29,7 @@
 
     @media (min-width: $tablet) {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         font-size: 18px;
         line-height: 24px;
@@ -52,18 +54,37 @@
 }
 
 .nav--cloused {
-    // display: none;
+    display: none;
+
+    @media (min-width:$tablet) {
+        display: block;
+
+    }
 }
 
 .nav__link {
     @media (min-width: $tablet) {
-        padding-bottom: 12px;
+        padding-bottom: 8px;
     }
 
     @media (min-width:$desktop) {
         color: $white;
     }
 }
+
+
+.nav__link:hover {
+    @media (min-width: $tablet) {
+        opacity: 60%;
+    }
+}
+
+.nav__link:active {
+    @media (min-width: $tablet) {
+        opacity: 30%;
+    }
+}
+
 
 .nav__link--catalog {
 
@@ -83,7 +104,7 @@
 }
 
 .nav__link--active {
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
         border-bottom: 2px solid #68B738;
     }
 }
