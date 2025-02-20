@@ -29,8 +29,10 @@
 
     @media (min-width:$desktop) {
         display: flex;
+        flex-wrap: wrap;
+        gap: 77px;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: start;
         margin-top: 32px;
     }
 }

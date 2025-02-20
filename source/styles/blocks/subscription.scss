@@ -103,6 +103,7 @@
     width: 100%;
     height: 56px;
     margin-top: 24px;
+    border: 1px solid #e7e7e7;
 
     @media (min-width:$tablet) {
         margin-top: 16px;
@@ -112,6 +113,18 @@
     @media (min-width:$desktop) {
         max-width: 496px;
     }
+}
+
+.subscription__form:hover {
+    border-color: #cdcdcd;
+}
+
+.subscription__form:focus {
+    border-color: #444444;
+}
+
+.subscription__form:invalid {
+    border-color: #FF8282;
 }
 
 .subscription__form::placeholder {

@@ -64,12 +64,11 @@
 
 .contacts__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 60px;
 
     @media (min-width:$tablet) {
-        display: flex;
-        justify-content: space-between;
         height: 80px;
     }
 

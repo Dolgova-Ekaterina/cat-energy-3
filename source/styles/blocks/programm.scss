@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-wrap: wrap;
 
     @media (min-width:$tablet) {
         padding: 0 30px;
@@ -23,6 +24,7 @@
 
     @media (min-width:$tablet) {
         padding: 77px 63px 58px 52px;
+        width: 708px;
     }
 
     @media (min-width:$desktop) {
@@ -171,6 +173,10 @@
     @media (min-width:$desktop) {
         margin-top: 27px;
     }
+}
+
+.programm__link:active {
+    opacity: 30%;
 }
 
 .programm__link::after {

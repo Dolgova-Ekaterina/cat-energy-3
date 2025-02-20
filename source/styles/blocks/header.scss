@@ -2,7 +2,7 @@
   background-color: $white;
   color: #ffffff;
   position: relative;
-  
+
   @media (min-width: $tablet) {
     display: flex;
     padding: 25px 34px 0 30px;
@@ -32,6 +32,18 @@
 
   @media (min-width:$desktop) {
     gap: 14px;
+  }
+}
+
+.header__items:hover {
+  @media (min-width:$desktop) {
+    opacity: 80%;
+  }
+}
+
+.header__items:active {
+  @media (min-width:$desktop) {
+    opacity: 60%;
   }
 }
 

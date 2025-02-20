@@ -29,6 +29,7 @@
 
     @media (min-width: $tablet) {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         font-size: 18px;
         line-height: 24px;
@@ -71,6 +72,20 @@
     }
 }
 
+
+.nav__link:hover {
+    @media (min-width: $tablet) {
+        opacity: 60%;
+    }
+}
+
+.nav__link:active {
+    @media (min-width: $tablet) {
+        opacity: 30%;
+    }
+}
+
+
 .nav__link--catalog {
 
     @media (min-width:$desktop) {
@@ -89,7 +104,7 @@
 }
 
 .nav__link--active {
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
         border-bottom: 2px solid #68B738;
     }
 }
